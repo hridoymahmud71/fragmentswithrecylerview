@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ItemClickListner{
 
     TextView tvName,tvTel;
     EditText etName,etTel;
@@ -31,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onItemClick(int i) {
+        Toast.makeText(this,String.valueOf(i),Toast.LENGTH_SHORT).show();
     }
 }

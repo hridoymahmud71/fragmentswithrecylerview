@@ -1,6 +1,7 @@
 package hridoy.aiz.fragmentswithrecyclerview;
 
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -43,4 +44,6 @@ public class ListFrag extends Fragment {
         rvAdapter = new PersonAdapter(this.getActivity(),ApplicationClass.personArrayList);
         recyclerView.setAdapter(rvAdapter);
     }
+
+
 }
