@@ -55,4 +55,10 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonList
     public int getItemCount() {
         return personArrayList.size();
     }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

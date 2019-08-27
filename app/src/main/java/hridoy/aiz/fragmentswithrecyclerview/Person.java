@@ -11,10 +11,6 @@ public class Person {
         Name = name;
         TelephoneNumber = telephoneNumber;
     }
-    public Person(String name) {
-        Name = name;
-        TelephoneNumber = "";
-    }
 
 
     public String getName() {
